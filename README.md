@@ -268,8 +268,8 @@ Y los manda al servidor de NODE-RED
 # Créditos
 
 Desarrollado por 
-Ing. Omar Alejandro Collado Carriola
-Ing. Sergio Rivera Barrera
-Ing. Luis Daniel Mendoza 
-Bahena
+- Ing. Omar Alejandro Collado Carriola
+- Ing. Sergio Rivera Barrera
+- Ing. Luis Daniel Mendoza Bahena
+
 - [GitHub](https://github.com/Omarcollado23)
