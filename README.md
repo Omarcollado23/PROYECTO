@@ -15,7 +15,55 @@ Para realizar esta practica necesitas lo siguiente
 - Tarjeta ESP 32
 - Sensor HC-SR04
 - LCD 16X2 (l2C)
+- 4 LED´s
+- NODE-red (http://localhost:1880/#flow/214928d358894902)
 
+## Instrucciones
+
+### Requisitos previos
+
+# Instalar Node-Red
+
+## Pasos para instalación
+
+1. Entrar a la pagina  https://nodejs.org/en
+2. Descargar el archivo **18.16.0 LTS** como se muestra en la siguente imagen.
+
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_04_00%20p.%20m..png?raw=true)
+
+3. Abrir el archivo e instalar el programa [node.js](https://nodejs.org/en)
+
+
+4. Nos vamos al inicio y buscamos ```cmd``` cOmo se muestra en la imagen y damos clic en "ejecutar como administrador" y escribir lo siguente:
+![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/CMD.png?raw=true)
+
+```
+npm install -g --unsafe-perm node-red
+```
+![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/npm%20instal.png?raw=true)
+
+5. Despues comprobamos que funcione node-red con el siguente codigo: (con este mismo codigo podemos arrancar el programa siempre que lo necesitemos)
+
+```
+node-red
+```
+ ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/node-red.png?raw=true)
+
+
+ ## Arranque de programa
+
+Para abrir la aplicación nos vamos algun explorador y colocamos el siguente link:    ```localhost:1880```
+
+
+## Instalación de Dashboard
+
+1. Abrimos la pestaña de opciones y elegimos ```Manage palette``` 
+
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_26%20p.%20m..png?raw=true)
+
+2. Seleccionamos **Install* y buscamos ```node-red-dashboard```.
+3. Seleccionamos ```node-red-dashboard```.
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_17%20p.%20m..png?raw=true)
 ## Instrucciones
 
 
@@ -169,9 +217,10 @@ delay (2000);
 
 Cuando haya funcionado, la información obtenida del sensor y **HC-SR04** se arrojara en el LCD como se muestra en las siguentes imagenes.
 
-![]()
-![]()
-![]()
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado%201.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado2.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado3.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado4.png?raw=true)
 
 
 
