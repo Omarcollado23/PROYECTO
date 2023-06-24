@@ -248,8 +248,9 @@ Los configuramos de la siguiente manera como se muestra en las siguientes imagen
 ![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado%20datos.png?raw=true)
 ![](https://github.com/Omarcollado23/PROYECTO/blob/main/grafica.png?raw=true)
 
-10. Y node debe quedar nuestro esquema de la siguiente manera
-![]()
+10. Y debe quedar nuestro esquema de la siguiente manera.
+
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/esquema.png?raw=true)
 
 
 ## Resultados
@@ -257,10 +258,10 @@ Los configuramos de la siguiente manera como se muestra en las siguientes imagen
 Cuando haya funcionado, la información obtenida del sensor y **HC-SR04** se arrojara en el LCD como se muestra en las siguentes imagenes. 
 Y los manda al servidor de NODE-RED
 
-![]()
-![]()
-![]()
-![]()
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/botella1.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/botella2.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/botella3.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/botella4.png?raw=true)
 
 
 
