@@ -1,4 +1,4 @@
-# Practica de ESP32 con Sensor de Distancia HC-SR04 y LCD
+# PROYECTO DE LLENADO DE BOTELLAS con ESP32, Sensor de Distancia HC-SR04 y LCD
 Este repositorio muestra el proyecto en el cual podemos programar una ESP32 con el sensor de distancia HC-SR04 con un LCD para simular una banda de llenado de botellas.
 
 
@@ -139,63 +139,20 @@ delay (2000);
 
 
   lcd.setCursor(0, 0);
-  lcd.print("LLENANDO : " + String(d) +"ml  ");
+  lcd.print("LLENANDO : " + String(d) +"  ml  ");
   lcd.setCursor(0, 1);
 
 }
 
 ```
 
-void loop() {
-
-  TempAndHumidity  data = dhtSensor.getTempAndHumidity();
-  Serial.println("Temp: " + String(data.temperature, 1) + "°C");
-  Serial.println("Humidity: " + String(data.humidity, 1) + "%");
-  Serial.println("---");
-  
-  lcd.setCursor(0, 0);
-  lcd.print("  Temp: " + String(data.temperature, 1) + "\xDF"+"C  ");
-  lcd.setCursor(0, 1);
-  lcd.print(" Humidity: " + String(data.humidity, 1) + "% ");
-  lcd.print("Wokwi Online IoT");
-  delay(1000);
-  lcd.setCursor(0, 0);
-  lcd.print("DIPLOMADO AIyM");
-  lcd.setCursor(0, 1);
-  lcd.print("SABADO 6 D JUNIO");
-  delay(1000);
-
-  long t; //timepo que demora en llegar el eco
-  long d; //distancia en centimetros
-
-  digitalWrite(Trigger, HIGH);
-  delayMicroseconds(10);          //Enviamos un pulso de 10us
-  digitalWrite(Trigger, LOW);
-
-  t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso
-  d = t/59;             //escalamos el tiempo a una distancia en cm
-  
-  Serial.print("Distancia: ");
-  Serial.print(distance);      //Enviamos serialmente el valor de la distancia
-  Serial.print("cm");
-  Serial.println();
-  delay(1000);          //Hacemos una pausa de 100ms
-
-  lcd.setCursor(0, 0);
-  lcd.print("  Distancia: " + String(d) +"cm  ");
-  lcd.setCursor(0, 1);
-  lcd.print("    Ing. OMAR    ");
-  delay(1000);
-}
-
-```
 2. Instalamos la libreria de  **LiquidCrystal I2C** como se muestra en la siguente imagen, dando clic en (Library Manager) y despues en el simbolo de (+)
 
 ![]()
 
 3. Hacemos las conexiones en el **ESP32** del sensor **HC-SR04** y **LCD** como se muestra en la siguiente imagen.
 
-![]()
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/conexiones.png?raw=true)
 
 ### Instrucciónes de operación
 
