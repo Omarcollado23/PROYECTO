@@ -50,23 +50,6 @@ node-red
  ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/node-red.png?raw=true)
 
 
- ## Arranque de programa
-
-Para abrir la aplicación nos vamos algun explorador y colocamos el siguente link:    ```localhost:1880```
-
-
-## Instalación de Dashboard
-
-1. Abrimos la pestaña de opciones y elegimos ```Manage palette``` 
-
-![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_26%20p.%20m..png?raw=true)
-
-2. Seleccionamos **Install* y buscamos ```node-red-dashboard```.
-3. Seleccionamos ```node-red-dashboard```.
-![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_17%20p.%20m..png?raw=true)
-## Instrucciones
-
-
 ### Requisitos previos
 
 Para poder usar este repositorio necesitas entrar a la plataforma [WOKWI](https://https://wokwi.com/).
@@ -199,7 +182,7 @@ delay (2000);
 
 2. Instalamos la libreria de  **LiquidCrystal I2C** como se muestra en la siguente imagen, dando clic en (Library Manager) y despues en el simbolo de (+)
 
-![]()
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/LIBRERIA.png?raw=true)
 
 3. Hacemos las conexiones en el **ESP32** del sensor **HC-SR04** y **LCD** como se muestra en la siguiente imagen.
 
@@ -210,22 +193,82 @@ delay (2000);
 1. Iniciamos el simulador.
 2. Visualizar los datos en el monitor serial.
 3. Colocar la distancia dando *doble click* al sensor **HC-SR04** 
+4. Visualizamos en la pantalla LCD
 
-  
+
+
+# Instrucciones para hacer la conexión con NODE-RED
+
+ 
+## Arranque de programa
+
+Para abrir la aplicación nos vamos algun explorador y colocamos el siguente link:    ```localhost:1880```
+
+
+## Instalación de Dashboard
+
+1. Abrimos la pestaña de opciones y elegimos ```Manage palette``` 
+
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_26%20p.%20m..png?raw=true)
+
+2. Seleccionamos **Install* y buscamos la libreria ```node-red-dashboard```.
+3. Seleccionamos ```node-red-dashboard```.
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_17%20p.%20m..png?raw=true)
+
+4. Una ves instalda la librería nos queda de la siguiente manera.
+
+![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/localhost1.png?raw=true)
+
+
+5. Colocamos bloque ```mqqtt in```.
+
+![](https://github.com/DiegoJm10/dht22-con-node-red/blob/main/bloquemqtt.png?raw=true)
+
+6.  Configurar el bloque con el puerto mqtt con el ip ```44.195.202.69``` como se muestra en la imagen.
+
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/mqtt%20conf.png?raw=true)
+
+7.  Colocar el bloque json y configurarlo como se muestra en la imagen.
+
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/json%20conf.png?raw=true)
+
+8. Colocamos un bloque ```function``` para obtener los datos con el siguente codigo.
+
+```
+msg.payload = msg.payload.LLENADO;
+msg.topic = "LLENADO";
+return msg;
+```
+
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/function%20conf.png?raw=true)
+
+9. Colocamos un bloque chart y un bloque gauge.
+Los configuramos de la siguiente manera como se muestra en las siguientes imagenes.
+
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado%20datos.png?raw=true)
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/grafica.png?raw=true)
+
+10. Y node debe quedar nuestro esquema de la siguiente manera
+![]()
+
 
 ## Resultados
 
-Cuando haya funcionado, la información obtenida del sensor y **HC-SR04** se arrojara en el LCD como se muestra en las siguentes imagenes.
+Cuando haya funcionado, la información obtenida del sensor y **HC-SR04** se arrojara en el LCD como se muestra en las siguentes imagenes. 
+Y los manda al servidor de NODE-RED
 
-![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado%201.png?raw=true)
-![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado2.png?raw=true)
-![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado3.png?raw=true)
-![](https://github.com/Omarcollado23/PROYECTO/blob/main/llenado4.png?raw=true)
+![]()
+![]()
+![]()
+![]()
 
 
 
 # Créditos
 
-Desarrollado por Ing. Omar Alejandro Collado Carriola
-
+Desarrollado por 
+Ing. Omar Alejandro Collado Carriola
+Ing. Sergio Rivera Barrera
+Ing. Luis Daniel Mendoza 
+Bahena
 - [GitHub](https://github.com/Omarcollado23)
