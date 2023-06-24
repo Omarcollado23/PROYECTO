@@ -22,6 +22,9 @@ Para realizar esta practica necesitas lo siguiente
 ### Requisitos previos
 
 Para poder usar este repositorio necesitas entrar a la plataforma [WOKWI](https://https://wokwi.com/).
+y escoger el apartado donde se encuentra el ESP32 unicamente solo.
+
+![](https://github.com/Omarcollado23/PROYECTO/blob/main/esp32.png?raw=true)
 
 
 ### Instrucciones de preparación de entorno 
